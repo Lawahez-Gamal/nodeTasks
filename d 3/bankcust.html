@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bankcust.css">
+    </head>
+    <body>
+        <div class="container">
+         <!--Start Add Button-->
+         <section class="container py-3  ">
+            <button class="btn btn-info text-white" id="showForm">Add New customer</button>
+        </section>
+        <!--End add Button-->
+        <!-- Start add form-->
+        <section id="addcustomerForm" class="container p-3 border border-2 mb-5 d-none">
+            <form id="addcustomerData">
+                <div class="mb-3">
+                    <label class="form-label">User name </label>
+                    <input type="text" class="form-control" placeholder="Your name" name="customerName">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">User salary</label>
+                    <input type="text" class="form-control" placeholder="salary" name="customerContent" >
+                </div>
+          
+                <div class="d-flex align-items-end flex-column">
+                    <button type="submit" class="btn btn-primary" onc>Add customer</button>
+                </div>
+            </form>    
+        </section>
+        <!-- End add form-->
+
+        <!-- Start Show customers-->
+        <section id="mycustomer" class="container p-3 border border-2 mb-5 ">
+
+            <input type="text" id="searchTable" class="form-control" placeholder="Search..." >
+
+            <table id="displayTable" class="table table-dark table-striped my-5" class="form-control">
+                <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Balance</th>
+                    <th>Delete  /
+                        Add  /
+                    withdraw</th>
+                </thead>
+                <tbody>
+                
+                </tbody>
+              </table>
+            </section>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/bankcust.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
